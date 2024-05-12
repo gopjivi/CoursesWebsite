@@ -1,0 +1,14 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  td,
+  th {
+    border: 1px solid;
+   
+  }
+  h1{
+    text-align: center;
+  }
