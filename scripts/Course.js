@@ -3,6 +3,7 @@
     // Specify the API endpoint for user data
 const apiUrl = 'http://localhost:8081/api/courses';
 let li="";
+
 fetch(apiUrl)
   .then(response => {
     if (!response.ok) {
@@ -16,6 +17,7 @@ fetch(apiUrl)
         <td>${data[i].dept}</td>
         <td>${data[i].courseNum} </td>
         <td>${data[i].courseName}</td>
+        <td><a href="details.html?cid=${data[i].id}">See details</a></td>
       
       </tr>`;
     }
