@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course List</title>
+    <script src="scripts/newcourse.js" defer></script>
 </head>
+
 <body>
-    <h1>Course List</h1>
-    <table>
-<tr>
-    <th>
-        Department
-    </th>
-    <th>Course Number</th>
-    <th>Course Name</th>
-</tr>
-<tbody id="tablebody"></tbody>
-    </table>
+    <form>
+        <label for="deptvalue">Department:</label><br>
+        <input type="text" id="deptvalue" name="deptvalue"><br>
+
+        <label for="numbervalue">Course Number:</label><br>
+        <input type="text" id="numbervalue" name="numbervalue" required><br>
+
+        <label for="namevalue">Course Name:</label><br>
+        <input type="text" id="namevalue" name="namevalue" required><br>
+
+        <label for="instructorvalue">Instructor:</label><br>
+        <input type="text" id="instructorvalue" name="instructorvalue" required><br>
+
+        <label for="startDatevalue">StartDate:</label><br>
+        <input type="date" id="startDatevalue" name="startDatevalue"><br>
+
+        <label for="numdaysvalue">Number of Days:</label><br>
+        <input type="number" id="numdaysvalue" name="numdaysvalue"><br><br>
+
+        <input type="submit" id="btnsubmit" value="Submit">
+    </form>
+<div id="messageid"></div>
 </body>
+
 </html>
